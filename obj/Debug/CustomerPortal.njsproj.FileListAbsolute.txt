@@ -1,0 +1,3 @@
+C:\Users\mwhite\Documents\Visual Studio 2017\Projects\NorthwindService\CustomerPortal\obj\Debug\CustomerPortal.njsproj.CoreCompileInputs.cache
+C:\Users\mwhite\Documents\Visual Studio 2017\Projects\NorthwindService\CustomerPortal\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\mwhite\Documents\Visual Studio 2017\Projects\NorthwindService\CustomerPortal\obj\Debug\CustomerPortal.njsprojResolveAssemblyReference.cache

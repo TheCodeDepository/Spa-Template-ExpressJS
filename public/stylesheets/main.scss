@@ -1,0 +1,218 @@
+$sidebarWidth: 250px;
+
+$sidebarMargin: ($sidebarWidth - ($sidebarWidth*2));
+$burgerMenuColor: #2D103F;
+$burgerMenuWidth: 50px;
+
+$burgerMenuhover: #6b4b81;
+$burgerBtnColor: #7b5793;
+
+
+$tabControlBackground: #c2acce;
+
+
+$slideBarFontC: #ffffff;
+$slideBarFontHover: #b5b5b5;
+$slideBarColor: #6D4587;
+$slideBarLiHover: #946ab0;
+$transitionTime: 0.5s;
+$sidebarWidth: 250px;
+
+$overlayColor: black;
+$overlayOpacity: 0.6;
+
+$pageContentFontC: white;
+$pageContentPadding: 20px;
+$pageBackground: url('/images/background3.svg');
+
+body
+{
+    overflow:hidden;
+}
+#wrapper.toggled {
+
+    #sidebar {
+        width: $sidebarWidth;
+    }
+
+    #fadeOverlay {
+        background-color: $overlayColor;
+        opacity: $overlayOpacity;
+        visibility: visible;
+    }
+}
+
+#wrapper {
+    @extend #transition;
+}
+
+#tabControl {
+    height: $burgerMenuWidth;
+    left: $burgerMenuWidth;
+    background-color: $tabControlBackground;
+    position: absolute;
+    width: auto;
+    right: 0px;
+    box-shadow: -1px 1px 5px #333333;
+    z-index: 8;
+}
+
+#page-content {
+    background: $pageBackground;
+    background-size: cover;
+    position: absolute;
+    left: $burgerMenuWidth;
+    width: auto;
+    height: auto;
+    bottom: 0px;
+    right: 0px;
+    top: $burgerMenuWidth;
+
+    @extend #transition;
+
+    .contentDisplay {
+        background-color: white;
+        padding: 1%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        .cHeader {
+            h1 {
+                text-decoration: underline;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .cBody {
+            td, tr {
+                height: auto;
+                width: auto;
+                padding: 1px;
+            }
+        }
+    }
+}
+#fadeOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 9;
+    @extend #transition;
+}
+
+
+#burger-menu {
+    height: 100vh;
+    width: $burgerMenuWidth;
+    float: left;
+    background-color: $burgerMenuColor;
+    z-index: 10;
+    position: absolute;
+
+    .btn {
+        @extend #transition;
+        height: $burgerMenuWidth;
+        width: $burgerMenuWidth;
+        padding: 20% 20% 20% 20%;
+        background-color: $burgerBtnColor;
+        border-radius: 0px;
+
+
+        #bar {
+            width: 100%;
+            height: 15%;
+            margin-bottom: 25%;
+            background-color: white;
+            border-radius: 2px;
+        }
+
+        &:active {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: $burgerMenuhover;
+            padding: 15%;
+        }
+        /*#bar.toggled {
+            width: 100%;
+            height: 5px;
+            margin-bottom: 3px;
+            background-color: white;
+            border-radius: 2px;
+        }*/
+    }
+}
+
+#sidebar {
+    height: 100vh;
+    width: 0px;
+    float: left;
+    left: 50px;
+    overflow: hidden;
+    position: absolute;
+    background: $slideBarColor;
+    z-index: 10;
+
+    @extend #transition;
+
+    .sidebar-nav {
+        position: absolute;
+        width: 250px;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+
+        li {
+            text-indent: 20px;
+            line-height: 40px;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: $slideBarFontC;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $slideBarFontHover;
+                    background: $slideBarLiHover;
+                }
+
+                &:active, &:focus {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .sidebar-brand {
+            height: 65px;
+            font-size: 18px;
+            line-height: 60px;
+
+            a {
+                color: $slideBarFontC;
+
+                &:hover {
+                    color: $slideBarFontHover;
+                    background: none;
+                }
+            }
+        }
+    }
+}
+
+#transition {
+    -webkit-transition: all $transitionTime ease;
+    -moz-transition: all $transitionTime ease;
+    -o-transition: all $transitionTime ease;
+    transition: all $transitionTime ease;
+}

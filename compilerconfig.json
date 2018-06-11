@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "public/stylesheets/main.css",
+    "inputFile": "public/stylesheets/main.scss"
+  },
+  {
+    "outputFile": "public/stylesheets/home.css",
+    "inputFile": "public/stylesheets/home.scss"
+  },
+  {
+    "outputFile": "public/stylesheets/Customers.css",
+    "inputFile": "public/stylesheets/Customers.scss"
+  }
+]

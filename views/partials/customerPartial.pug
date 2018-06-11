@@ -1,0 +1,59 @@
+﻿.contentDisplay
+  .cHeader
+    h1 Customers    
+  .cBody
+    div
+      block scripts
+        link(rel='stylesheet', href='/stylesheets/Customers.css')        
+      .table-responsive
+        table.table.table-striped
+          thead
+            tr
+              th Customer ID
+              th Company Name
+              th Contact Name
+              th Contact Title
+              th Address
+              th City
+              th Region
+              th Postal Code
+              th Country
+              th Phone
+              th Fax
+            tr
+              th
+                input.form-control(type="text" ng-model="customer")
+              th
+                input.form-control(type="text" )
+              th
+                input.form-control(type="text")
+              th
+                input.form-control(type="text")
+              th
+                input.form-control(type="text")
+              th
+                input.form-control(type="text")
+              th
+                input.form-control(type="text")
+              th
+                input.form-control(type="text")
+              th
+                input.form-control(type="text")
+              th
+                input.form-control(type="text")
+              th
+                input.form-control(type="text")
+          tbody
+            tr(ng-repeat='x in records | idFilter : customer')              
+              td {{x.CustomerID}}
+              td {{x.CompanyName}}
+              td {{x.ContactName}}
+              td {{x.ContactTitle}}
+              td {{x.Address}}
+              td {{x.City}}
+              td {{x.Region}}
+              td {{x.PostalCode}}
+              td {{x.Country}}
+              td {{x.Phone}}
+              td {{x.Fax}}
+

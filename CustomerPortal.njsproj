@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>CustomerPortal</Name>
+    <RootNamespace>CustomerPortal</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9bbaf0e4-4554-4b01-bb59-3014c698c1ae</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\javascripts\app.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\javascripts\Controllers.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\javascripts\helpers.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\javascripts\scripts\angular-animate\angular-animate.js" />
+    <Compile Include="public\javascripts\scripts\angular-animate\angular-animate.min.js" />
+    <Compile Include="public\javascripts\scripts\angular-animate\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-route\angular-route.js" />
+    <Compile Include="public\javascripts\scripts\angular-route\angular-route.min.js" />
+    <Compile Include="public\javascripts\scripts\angular-route\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\dist\smart-table.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\dist\smart-table.min.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\gulpFile.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\src\smart-table.module.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\src\stConfig.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\src\stPagination.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\src\stPipe.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\src\stSearch.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\src\stSelectRow.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\src\stSort.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\src\stTable.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\init.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\karma.common.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\karma.conf.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\spec\stPagination.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\spec\stPipe.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\spec\stSearch.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\spec\stSelectRow.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\spec\stSort.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-smart-table\test\spec\stTable.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\dist\ui-bootstrap-tpls.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\dist\ui-bootstrap.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\accordion.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\test\accordion.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\alert.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\test\alert.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\buttons.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\test\buttons.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\carousel.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\test\carousel.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\collapse.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\test\collapse.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\test\collapseHorizontally.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\dateparser.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\test\dateparser.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\popup.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\test\popup.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\datepicker.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\test\datepicker.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\debounce\debounce.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\debounce\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\debounce\test\debounce.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\dropdown.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\test\dropdown.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\isClass\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\isClass\isClass.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\isClass\test\isClass.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\modal.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\test\modal.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\multiMap\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\multiMap\multiMap.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\multiMap\test\multiMap.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\pager.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\test\pager.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\pagination.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\test\pagination.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\paging\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\paging\paging.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\paging\test\paging.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\popover.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\test\popover-html.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\test\popover-template.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\test\popover.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\position.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\test\position.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\progressbar.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\test\progressbar.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\rating.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\test\rating.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\stackedMap\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\stackedMap\stackedMap.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\stackedMap\test\stackedMap.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabindex\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabindex\tabindex.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabindex\test\tabindex.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\tabs.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\test\tabs.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\test\timepicker.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\timepicker.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\test\tooltip-template.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\test\tooltip.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\test\tooltip2.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\tooltip.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\docs\demo.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\index-nocss.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\index.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\test\typeahead-highlight-ngsanitize.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\test\typeahead-highlight.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\test\typeahead-parser.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\test\typeahead-popup.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\test\typeahead.spec.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\typeahead.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\accordion\accordion-group.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\accordion\accordion.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\alert\alert.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\carousel\carousel.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\carousel\slide.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepickerPopup\popup.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\datepicker.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\day.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\month.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\popup.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\year.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\modal\backdrop.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\modal\window.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\pager\pager.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\pagination\pagination.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\popover\popover-html.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\popover\popover-template.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\popover\popover.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\progressbar\bar.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\progressbar\progress.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\progressbar\progressbar.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\rating\rating.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\tabs\tab.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\tabs\tabset.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\timepicker\timepicker.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\tooltip\tooltip-html-popup.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\tooltip\tooltip-popup.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\tooltip\tooltip-template-popup.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\typeahead\typeahead-match.html.js" />
+    <Compile Include="public\javascripts\scripts\angular-ui-bootstrap\template\typeahead\typeahead-popup.html.js" />
+    <Compile Include="public\javascripts\scripts\angular\angular.js" />
+    <Compile Include="public\javascripts\scripts\angular\angular.min.js" />
+    <Compile Include="public\javascripts\scripts\angular\index.js" />
+    <Compile Include="routes\api.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\partials.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="public\javascripts\scripts\angular-animate\angular-animate.min.js.map" />
+    <Content Include="public\javascripts\scripts\angular-animate\bower.json" />
+    <Content Include="public\javascripts\scripts\angular-animate\LICENSE.md" />
+    <Content Include="public\javascripts\scripts\angular-animate\package.json" />
+    <Content Include="public\javascripts\scripts\angular-animate\README.md" />
+    <Content Include="public\javascripts\scripts\angular-route\angular-route.min.js.map" />
+    <Content Include="public\javascripts\scripts\angular-route\bower.json" />
+    <Content Include="public\javascripts\scripts\angular-route\LICENSE.md" />
+    <Content Include="public\javascripts\scripts\angular-route\package.json" />
+    <Content Include="public\javascripts\scripts\angular-route\README.md" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\.travis.yml" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\bower.json" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\changeLog.md" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\dist\smart-table.min.js.map" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\ISSUE_TEMPLATE.md" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\package.json" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\src\bottom.txt" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\src\top.txt" />
+    <Content Include="public\javascripts\scripts\angular-smart-table\yarn.lock" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\CHANGELOG.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\dist\.DS_Store" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\dist\ui-bootstrap-csp.css" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\LICENSE" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\package.json" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\README.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\carousel.css" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\docs\README.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\docs\README.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\popup.css" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\datepicker.css" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\position.css" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\test\test.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\timepicker.css" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\tooltip.css" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\docs\demo.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\docs\readme.md" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\typeahead.css" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\accordion\accordion-group.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\accordion\accordion.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\alert\alert.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\carousel\carousel.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\carousel\slide.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepickerPopup\popup.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\datepicker.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\day.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\month.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\year.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\modal\window.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\pager\pager.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\pagination\pagination.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\popover\popover-html.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\popover\popover-template.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\popover\popover.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\progressbar\bar.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\progressbar\progress.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\progressbar\progressbar.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\rating\rating.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\tabs\tab.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\tabs\tabset.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\timepicker\timepicker.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\tooltip\tooltip-html-popup.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\tooltip\tooltip-popup.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\tooltip\tooltip-template-popup.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\typeahead\typeahead-match.html" />
+    <Content Include="public\javascripts\scripts\angular-ui-bootstrap\template\typeahead\typeahead-popup.html" />
+    <Content Include="public\javascripts\scripts\angular\angular-csp.css" />
+    <Content Include="public\javascripts\scripts\angular\angular.min.js.gzip" />
+    <Content Include="public\javascripts\scripts\angular\angular.min.js.map" />
+    <Content Include="public\javascripts\scripts\angular\bower.json" />
+    <Content Include="public\javascripts\scripts\angular\LICENSE.md" />
+    <Content Include="public\javascripts\scripts\angular\package.json" />
+    <Content Include="public\javascripts\scripts\angular\README.md" />
+    <Content Include="views\partials\index.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\index.pug" />
+    <Content Include="public\images\background3.svg" />
+    <Content Include="views\partials\customerPartial.pug" />
+    <Content Include="public\stylesheets\Customers.css" />
+    <Content Include="public\stylesheets\Customers.min.css">
+      <SubType>Content</SubType>
+      <DependentUpon>public\stylesheets\Customers.css</DependentUpon>
+    </Content>
+    <Content Include="public\stylesheets\Customers.scss">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\partials\orders.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="public\stylesheets\main.min.css">
+      <SubType>Content</SubType>
+      <DependentUpon>public\stylesheets\main.css</DependentUpon>
+    </Content>
+    <Content Include="public\stylesheets\main.scss" />
+    <Content Include="README.md" />
+    <Content Include="views\error.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\javascripts\scripts\" />
+    <Folder Include="public\javascripts\scripts\angular-animate\" />
+    <Folder Include="public\javascripts\scripts\angular-route\" />
+    <Folder Include="public\javascripts\scripts\angular-smart-table\" />
+    <Folder Include="public\javascripts\scripts\angular-smart-table\dist\" />
+    <Folder Include="public\javascripts\scripts\angular-smart-table\src\" />
+    <Folder Include="public\javascripts\scripts\angular-smart-table\test\" />
+    <Folder Include="public\javascripts\scripts\angular-smart-table\test\spec\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\dist\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\accordion\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\alert\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\buttons\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\carousel\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\collapse\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\dateparser\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepickerPopup\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\datepicker\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\debounce\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\debounce\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\dropdown\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\isClass\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\isClass\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\modal\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\multiMap\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\multiMap\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\pager\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\pagination\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\paging\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\paging\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\popover\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\position\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\progressbar\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\rating\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\stackedMap\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\stackedMap\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabindex\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabindex\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\tabs\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\timepicker\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\tooltip\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\docs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\src\typeahead\test\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\accordion\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\alert\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\carousel\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepickerPopup\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\datepicker\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\modal\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\pager\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\pagination\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\popover\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\progressbar\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\rating\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\tabs\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\timepicker\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\tooltip\" />
+    <Folder Include="public\javascripts\scripts\angular-ui-bootstrap\template\typeahead\" />
+    <Folder Include="public\javascripts\scripts\angular\" />
+    <Folder Include="routes\" />
+    <Folder Include="public\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\images\" />
+    <Folder Include="views\partials\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
